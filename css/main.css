@@ -1,0 +1,102 @@
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel="stylesheet">
+body {
+	
+	 	font-size: 16px;
+}
+
+.front-banner-box {
+	
+	height: 950px;
+}
+
+.india-title {
+	background-image:url('../img/loop-img.jpg');
+    font-size:300px;
+    text-transform:uppercase;
+    text-align:center;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin:0;
+    background-position: 0% 0%;
+    font-weight: bolder;
+    margin-bottom: -100px;
+     font-family: Lato, monospace;
+     letter-spacing: 16px;
+     /*background-repeat: repeat-x;*/
+     -webkit-animation: bg-anim 30s linear infinite;
+	}
+
+	.bg-color {
+		width: 100%;
+		height: 520px;
+		background-color: #E1DECF;
+	}
+	.welcom-title {
+		font-size: 100px;
+		text-align: center;
+		margin-bottom: -25px;
+		padding-top:  40px;
+		font-weight: 100;
+		font-family: Lato;
+		color: #fff;
+		 font-family: Lato, monospace;
+		 letter-spacing: 30px;
+}
+.front-banner-img img{
+	width: 100%;
+}
+.front-banner-img {
+	position: relative;
+}
+.front-banner-img .ovl{
+	width: 100%;
+    height: 306px;
+    background: #E1DECF;
+    position: absolute;
+    top: 112px;
+    z-index: -1;
+}
+.g-title {
+	color: #bb9c57;
+	font-size: 60px;
+	 font-family: Lato, monospace;
+	 text-decoration: underline;
+}
+.gandhi {
+	width: 100%;
+}
+.widht100 {
+	width: 100%;
+}
+.pl0 {
+	padding-left: 0;
+}
+
+@-webkit-keyframes bg-anim {
+	from {
+     background-position: 0% 0%;
+	}
+	to {
+     background-position: 100% 0%;
+	}
+}
+
+.elephant {
+	width: 80%;
+	display: block;
+	float: right;
+	
+}
+.holy-img {
+	background: url(../img/holy.jpg) center no-repeat;
+	width: 100%;
+	height: 1000px;
+	background-size: 100%;
+
+}
+.htxt {
+	position: absolute;
+    top: 50%;
+    left: 13%;
+    width: 430px;
+}

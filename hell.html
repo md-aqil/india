@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	body {
+		overflow: hidden;
+		background: #ddd;
+		/*background: #ff3b00;*/
+	}
+		.text {
+			 background: url(img/glitter2.jpg);
+   			     background-position: 0% 0%;
+   			     width: 100%;
+   			     height: 200px;
+			text-align: center;
+			font-size: 150px;
+			margin-top: 50px;
+			-webkit-animation: bg 1s linear;
+			-webkit-background-clip: text;
+   			 color: transparent;
+
+		}
+
+		@-webkit-keyframes  bg{
+			0% { transform: translate(0px, -100%);
+				opacity: 0;
+			}
+			50% { transform: translate(0px, -50%);
+				opacity: .5;
+				transform: scale(1.1);
+
+			}
+			100% { transform: translate(0px, 0%);
+				opacity: 1;
+   			     background-position: 0% 100%;
+				
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<h1 class="text">عيد مبارك</h1>
+	<h1 class="text">Eid Mubarak</h1>
+</body>
+</html>
