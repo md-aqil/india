@@ -6,9 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>INDIA</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/atvImg.css">
 	<link rel="stylesheet" href="css/main.css">
+	<style>
+		.atvImg-shadow {
+			box-shadow: none !important;
+		}
+		.atvImg img {
+			box-shadow: none;
+
+		}
+	</style>
 </head>
 <body>
+
+<div class="header clearfix">
+	<div class="container clearfix">
+			<span class="modal-btn" data-toggle="modal" data-target="#myModal">Want to say?</span>
+	</div>
+</div>
 
 	<div class="front-banner-box">
 		<div class="bg-color">
@@ -36,7 +52,14 @@
 				</p>
 			</div>
 			<div class="col-md-7 pl0">
-				<img class="gandhi" src="img/gandhi.png" alt="">
+				<div class="atvImg no-shadow" style="width: 100%;height: 600px;">
+					<img class="gandhi" src="img/gandhi.png" alt="">
+					<div class="atvImg-layer"></div>
+					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
+					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
+					<div class="atvImg-layer" data-img="img/gandhi.png"></div>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -65,7 +88,15 @@
 				</p>
 			</div>
 			<div class="col-md-6 pl0">
-				<img class="elephant" src="img/elephant.jpg" alt="">
+				<div class="atvImg pull-right no-shadow" style="width: 80%; height: 500px">
+				<img class="elephant" src="img/elephant.png" alt="">
+  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+  					 
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -99,8 +130,14 @@
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quia nobis est consequatur nihil laboriosam nam, mollitia, eos esse consectetur inventore, nostrum dolorum alias ab magni laborum eaque repellat earum.
 				</p>
 			</div>
-			<div class="col-md-6 pl0">
+			<div class="col-md-6">
+					<div class="atvImg no-shadow pull-right" style="width: 80%; height: 400px;">
 				<img class="elephant" src="img/tiger.png" alt="">
+  						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
+  						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
+  						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
+  						 <div class="atvImg-layer" data-img="img/tiger.png"></div>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -110,5 +147,60 @@
 			<img class="img-responsive" src="img/taj.jpg" alt="">
 		</div>
 	</div>
+	
+	<div >
+			
+		<div id="myModal" class="modal fade" role="dialog">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content" id="m-content">
+		      <div class="modal-header">
+		       
+		      </div>
+		  	 <div class="modal-body">
+			      <div class="row">
+			      <div class="col-md-4">
+			     		 <div class="india-map">	
+			      				<img src="img/india-map.gif" alt="">
+			      		</div>
+			      </div>
+				      <div class="col-md-8">
+					      	<div class="row">
+			      			      	<div class="col-md-6">
+			      			      		  <div class="form-group">
+			      				        <input type="text" class="form-control" placeholder="Name">
+			      				      </div>
+			      			      	</div>
+			      			      	<div class="col-md-6">
+			      			      		  <div class="form-group">
+			      				        <input type="text" class="form-control" placeholder="Email">
+			      				      </div>
+			      			      	</div>
+			      		      	   <div class="col-md-12">
+			      				      <div class="form-group">
+			      				        <textarea class="form-control" rows="4" placeholder="What you want to say?"></textarea>
+			      				      </div>
+			      		     	 </div>
+			      		     	 <div class="pull-right ftr">
+			      		     	 	<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+		      							 <button  class="btn btn-success">Submit</button>
+			      		     	 </div>
+					      	</div>
+				      </div>
+				      	
+			      </div>
+		   	 </div>
+		 
+		    </div>
+		
+		  </div>
+		</div>
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/atvImg.js"></script>
+<script>
+	atvImg();
+</script>
 </body>
 </html>

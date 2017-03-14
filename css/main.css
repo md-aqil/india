@@ -34,12 +34,13 @@ body {
 		font-size: 100px;
 		text-align: center;
 		margin-bottom: -25px;
-		padding-top:  40px;
 		font-weight: 100;
 		font-family: Lato;
 		color: #fff;
 		 font-family: Lato;
+		 font-family: 'Poiret One';
 		 letter-spacing: 30px;
+		text-transform: lowercase;
 }
 .front-banner-img img{
 	width: 100%;
@@ -49,7 +50,7 @@ body {
 }
 .front-banner-img .ovl{
 	width: 100%;
-    height: 306px;
+    height: 330px;
     background: #E1DECF;
     position: absolute;
     top: 112px;
@@ -58,7 +59,8 @@ body {
 .g-title {
 	color: #bb9c57;
 	font-size: 60px;
-	 font-family: Lato, monospace;
+	 font-family: 'Poiret One';
+	 font-weight: bold;
 	 text-decoration: underline;
 }
 .gandhi {
@@ -104,6 +106,97 @@ body {
 }
 .green {
 	color: #00a500;
+}
+/*modal css*/
+.main-modal {
+width: 40%;
+    height: 400px;
+    background: #ddd;
+    top: 0;
+    left: 30%;
+    position: absolute;
+   	transform: translate(0%, -100%);
+
+}
+.show-modal {
+   	transform: translate(0%, 0%);
+
+}
+#m-content {
+	background: url(../img/panel.jpg);
+	width: 100%;
+	height:auto;
+	border: none;
+	position: relative;
+	margin-top: 100px;
+}
+#m-content .form-control{
+	background: none;
+	box-shadow: none;
+	font-size: 20px;
+	 font-family: 'Lato';
+}
+#m-content::before, #m-content::after {
+	right: 10%;
+    background: transparent url(../img/cable.png) 0 0 no-repeat;
+    position: absolute;
+    display: block;
+    height: 860px;
+    width: 30px;
+    content: "";
+    top: -825px;
+    z-index: 1;
+}
+ #m-content::after {
+	left: 10%;
+
+ }
+  #m-content .modal-footer{
+	padding-top: 0;
+	border:none;
+ }
+ .mt0 {
+ 	 margin-top: 0;
+ }
+ .font-poiret {
+ 	 font-family: 'Poiret One', Lato;
+ }
+  .font-lato {
+ 	 font-family: Lato;
+ }
+
+  .font-dancing {
+ 	 font-family: 'Dancing Script';
+ }
+ .mpr {
+ 	 font-size: 16px;
+ }
+.header {
+	height: 55px;
+	background: #e1decf;
+}
+.header .modal-btn {
+	border: 1px solid #c3c2bd;
+    padding: 8px 10px;
+    margin-top: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+    -webkit-transition: all .2s;
+    
+}
+.header .modal-btn:hover {
+	background: #ff6c00;
+	color: #fff;
+}
+.india-map img  {
+	 width: 100%;
+}
+.ftr {
+	 margin-right: 15px;
+    margin-top: 15px;
 }
 @media (max-width: 767px) {
  .bg-color {
